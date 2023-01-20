@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="assets/css/app.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap"
+      rel="stylesheet"
+    />
+    <title id="title">祝你 2023 新年快乐！</title>
+  </head>
+  <body
+    class="select-none w-screen h-screen overflow-hidden"
+    ondragstart="return false;"
+  >
+    <div
+      class="relative main z-50 flex justify-center items-center"
+      style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(3.2px)"
+      id="pre"
+    >
+      <button onclick="startFireworks()" id="start-button">
+        S T A R T
+        <div id="clip">
+          <div id="leftTop" class="corner"></div>
+          <div id="rightBottom" class="corner"></div>
+          <div id="rightTop" class="corner"></div>
+          <div id="leftBottom" class="corner"></div>
+        </div>
+        <span id="rightArrow" class="arrow"></span>
+        <span id="leftArrow" class="arrow"></span>
+      </button>
+      <div class="bottom-8 w-screen left-0 absolute text-white">
+        <div class="container mx-auto max-w-xl text-sm opacity-60">
+          Made with ♥ by
+          <a href="//github.com/liyanqwq" target="_blank" nofollow noopener
+            >Li Yan</a
+          >.&emsp;
+          <a
+            href="https://github.com/liyanqwq/fireworks-2023"
+            target="_blank"
+            nofollow
+            noopener
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="main z-30 flex justify-center items-center text-white">
+      <div class="words" id="typed"></div>
+    </div>
+    <div class="main z-20" id="fireworks"></div>
+    <div
+      class="main z-10"
+      style="
+        background: url('https://s1.ax1x.com/2023/01/20/pSG9Yu9.png') no-repeat
+          center center fixed;
+        background-size: cover;
+      "
+    ></div>
+    <script src="https://npm.elemecdn.com/fireworks-js@2.x/dist/index.umd.js"></script>
+    <script
+      src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.min.js"
+      type="application/javascript"
+    ></script>
+    <script>
+      const container = document.querySelector("#fireworks");
+      const fireworks = new Fireworks.default(container, {
+        sound: {
+          enabled: true,
+          files: [
+            "assets/media/explosion0.mp3",
+            "assets/media/explosion1.mp3",
+            "assets/media/explosion2.mp3",
+          ],
+        },
+      });
+      var typed_options = {
+        strings: [
+          "2023 年春节快要到了。",
+          "新的一年，愿日子如熹光，温柔又安详。",
+          "兔年要走花路，一路要舒舒服服。",
+          "祝你 2023 年新年快乐！",
+        ],
+        typeSpeed: 200,
+      };
+      function startFireworks() {
+        document.getElementById("pre").style.display = "none";
+        fireworks.start();
+        var typed = new Typed("#typed", typed_options);
+      }
+    </script>
+  </body>
+</html>
