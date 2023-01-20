@@ -2,6 +2,8 @@
 
 Powered by [typed.js](https://github.com/mattboldt/typed.js/) & [fireworks-js](https://github.com/crashmax-dev/fireworks-js/).
 
+Inspired by Qzc.
+
 ## Usage
 
 ### Compile CSS
