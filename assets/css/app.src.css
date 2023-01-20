@@ -9,7 +9,11 @@
 .words {
   @apply container mx-auto max-w-xl text-xl md:text-2xl lg:text-3xl text-center;
   font-family: "ZCOOL KuaiLe", sans-serif;
-  text-shadow: 0px 0px 6px #ee9999;
+  text-shadow: 0px 0px 6px #0099ff;
+}
+
+.typed-cursor {
+  display: none !important;
 }
 
 /* Button CSS */

@@ -1,13 +1,15 @@
-# 新年快乐！烟花效果
+# New Year's Words with Firework Backgrounds
 
 Powered by [typed.js](https://github.com/mattboldt/typed.js/) & [fireworks-js](https://github.com/crashmax-dev/fireworks-js/).
 
-## 特别的中文声明
+## Usage
 
-给 `qzc` 做的，让他看着改吧。
+### Compile CSS
 
-该改的都在 `<script>` 标签里，改完自己玩。
+```
+npx tailwindcss -i ./assets/css/app.src.css -o ./assets/css/app.css --minify
+```
 
-不点 `Fork` 我打死你。
+## License
 
-`qzc` 同志可以不遵守开源协议，随便分发。
+AGPL v3

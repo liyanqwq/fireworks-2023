@@ -18,12 +18,13 @@
     ondragstart="return false;"
   >
     <div
-      class="relative main z-50 flex justify-center items-center"
+      class="relative main z-50 flex flex-col justify-center items-center"
       style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(3.2px)"
       id="pre"
     >
+      <div class="words text-white mb-6">点击按钮，查看 2023 年新年祝福</div>
       <button onclick="startFireworks()" id="start-button">
-        S T A R T
+        V I E W
         <div id="clip">
           <div id="leftTop" class="corner"></div>
           <div id="rightBottom" class="corner"></div>
@@ -53,14 +54,7 @@
       <div class="words" id="typed"></div>
     </div>
     <div class="main z-20" id="fireworks"></div>
-    <div
-      class="main z-10"
-      style="
-        background: url('https://s1.ax1x.com/2023/01/20/pSG9Yu9.png') no-repeat
-          center center fixed;
-        background-size: cover;
-      "
-    ></div>
+    <div class="main z-10 bg-black"></div>
     <script src="https://npm.elemecdn.com/fireworks-js@2.x/dist/index.umd.js"></script>
     <script
       src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.min.js"
@@ -81,9 +75,12 @@
       var typed_options = {
         strings: [
           "2023 年春节快要到了。",
-          "新的一年，愿日子如熹光，温柔又安详。",
-          "兔年要走花路，一路要舒舒服服。",
-          "祝你 2023 年新年快乐！",
+          "我在这里给大家拜个年。",
+          "下一年将是艰难的一年。",
+          "疫情、经济……都是重大的挑战。",
+          "但我相信，我们一定能够度过难关。",
+          "祝你们平安、幸福。",
+          "大家过年好！",
         ],
         typeSpeed: 200,
       };
